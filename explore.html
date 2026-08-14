@@ -1,14 +1,122 @@
-<div id="navbar"></div>
-<div class="card">
+<!DOCTYPE html>
+<html lang="en">
 
-<img src="images/restaurant.jpg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
 
-<h3>Restaurant Name</h3>
+    <style>
+        h1 {
+            background-image: url('images/explore/sma.jpg');
+            height: 500px;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
 
-<p>
+<body>
 
-Wonderful rooftop dining overlooking the Parroquia.
+    <!-- Navigation -->
+    <nav class="navbar">
+        <ul class="nav--list">
+            <li class="active"></li>
+            <li class="item"><a href="index.html">Home</a></li>
+            <li class="item"><a href="explore.html">Explore</a></li>
+            <li class="item"><a href="book.html">Book</a></li>
+        </ul>
+    </nav>
 
-</p>
+    <!-- Header -->
+    <h1>Explore</h1>
 
-</div>
+    <div>
+        <p class="explore_par">
+            Experience the charm of San Miguel de Allende from Casa Arroyo,
+            a beautiful home within walking distance of the historic center.
+        </p>
+    </div>
+
+    <!-- Slideshow -->
+    <section class="tour">
+
+        <h2>Recommendations</h2>
+
+        <div class="slideshow-container">
+
+            <div class="mySlides">
+                <img src="images/explore/rancho.jpg">
+                <div class = "caption"> Rancho Sol Dorado</div>
+            </div>
+
+            <div class="mySlides">
+                <img src="images/explore/aurora.jpg">
+                <div class = "caption"> Fabrica Aurora </div>
+            </div>
+
+            <div class="mySlides">
+                <img src="images/explore/gruta.jpg">
+                <div class = "caption"> La Gruta Hotsprings </div>
+            </div>
+
+            <div class="mySlides">
+                <img src="images/explore/jardin.jpg">
+                <div class = "caption"> Charco del Ingenio botanical garden </div>
+            </div>
+
+            <div class="mySlides">
+                <img src="images/explore/parque.jpg">
+                <div class = "caption"> Parque Benito Juarez</div>
+            </div>
+
+            <div class="mySlides">
+                <img src="images/explore/viña.jpg">
+                <div class = "caption"> La Santisima Trinidad Winery</div>
+            </div>
+
+            <!-- Previous / Next buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            <!-- Caption -->
+            <div class="caption-container">
+                <p id="caption"></p>
+            </div>
+
+        </div>
+
+    </section>
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+    showSlides(slideIndex += n);
+}
+
+function showSlides(n) {
+    let slides = document.getElementsByClassName("mySlides");
+
+    if (n > slides.length) {
+        slideIndex = 1;
+    }
+
+    if (n < 1) {
+        slideIndex = slides.length;
+    }
+
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+
+    slides[slideIndex - 1].style.display = "block";
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,236 @@
+/* body
+
+.navbar
+
+.hero
+
+.hero-text
+
+.welcome
+
+.tour
+
+.slideshow
+
+.booking
+
+.reserve-button
+
+.location
+
+.reviews
+
+footer */
+
+/* removes all weird margin spacing that was default*/ 
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* Navbar */
+.navbar {
+    position: absolute;     
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: transparent;
+    z-index: 1000;
+    padding: 20px 0;
+}
+
+.nav--list {
+    display: flex;
+    justify-content: flex-end; /* Moves content to the right */
+    align-items: flex-end;   /* Moves content to the top */
+    gap: 40px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav--list a {
+    display: inline-block;
+    color: white;
+    background: #5C7457;
+    text-decoration: none;
+    font-size: 22px;
+    font-family: Arial, sans-serif;
+    transition: color 0.3s ease;
+    font-weight: 600;
+    margin-top: 20px;
+    margin-right: 10px;
+    padding: 10px 20px;
+    
+
+
+}
+
+/* 
+.nav--list a:hover {
+    color: #d4af37;  
+} */
+
+/* Header */
+h1 {
+    background-image: url("images/headerimage.png");
+    height: 500px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+    margin: 0; /* Remove default margin */
+}
+/* dark gray paragraph*/ 
+.par1 {
+  /* border-radius: 25px; */
+  background-color: #6b6a62;
+  width: flex;
+  height: 300px;
+  color: white;
+}
+/* light paragraph */ 
+.explore_par {
+  /* border-radius: 25px; */
+  background-color: #F79C3F; /*E5DAB28*/
+  width: flex;
+  height: 300px;
+  color: #6E340F;
+}
+
+.tour{
+    padding:80px 20px;
+    background:#f5f2ec;
+    text-align:center;
+}
+
+.tour h2{
+    margin-bottom:40px;
+    font-size:2.5rem;
+    color:#333;
+}
+
+.slideshow-container{
+    position:relative;
+    max-width:900px;
+    margin:auto;
+    background:white;
+    border-radius:18px;
+    overflow:hidden;
+}
+
+.mySlides{
+    display:none;
+}
+
+.mySlides img{
+    width:100%;
+    height:550px;
+    object-fit:cover;
+    display:block;
+}
+.caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 12px 0;
+    text-align: center;
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    font-size: 18px;
+}
+
+.slideshow{
+    position:absolute;
+    top:15px;
+    left:15px;
+    padding:8px 12px;
+    border-radius:20px;
+}
+
+.prev,
+.next{
+    cursor:pointer;
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+    padding:18px;
+    color:white;
+    font-size:28px;
+    font-weight:bold;
+    background:#42443b;
+    user-select:none;
+    transition:.3s;
+}
+
+.prev{
+    left:0;
+    border-radius:0 8px 8px 0;
+}
+
+.next{
+    right:0;
+    border-radius:8px 0 0 8px;
+}
+/* 
+.prev:hover,
+.next:hover{
+    background:rgba(0,0,0,.75);
+} */
+/* Aesthetic Button */
+.book_button {
+    display: inline-block;
+    padding: 14px 32px;
+    background: #5C7457;
+    color: white;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 20px rgba(108, 99, 255, 0.25);
+    margin-top: 70px;
+}
+
+.book_button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 30px rgba(108, 99, 255, 0.4);
+    background: #5C7457;
+}
+
+.book_button:active {
+    transform: scale(0.97);
+    box-shadow: 0 5px 15px rgba(108, 99, 255, 0.3);
+}
+.map-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0;
+    padding-bottom: 50px;
+    /* background: #bcbbb3; */
+}
+
+.footer{
+    background: #5C7457;
+    color: white;
+    display: flex;
+    justify-content: flex-start; 
+    align-items: flex-end;     
+    height: 200px;
+}

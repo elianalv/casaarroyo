@@ -1,53 +1,65 @@
 <!DOCTYPE html>
 
 <html lang="en">
+<div class="container">
+  <!-- <nav class="navbar">
+    <ul class="nav--list">
+      <li class="active"></li>
+      <li class="item"><a href="#">Home</a></li>
+      <li class="item"><a href="#">About</a></li>
+      <li class="item"><a href="#">Products</a></li>
+    </ul>
+  </nav> -->
+</div>
+
+<link rel="stylesheet" href="styles.css">
 
 <head>
 
     <meta charset="UTF-8">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Casa Arroyo</title>
-
-    <link rel="stylesheet" href="style.css">
+    <head><nav class="navbar">
+            <ul class="nav--list">
+            <li class="active"></li>
+            <li class="item"><a href="index.html">Home</a></li>
+            <li class="item"><a href="explore.html">Explore</a></li>
+            <li class="item"><a href="book.html">Book</a></li>
+            </ul>
+        </nav>
+        <style>
+            h1 {
+                background-image: url('images/home/headerimage.png'); 
+                height: 500px;
+                background-repeat: no-repeat; 
+                background-position: center; 
+                background-size: cover; 
+                color: white; 
+                align-items: center;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        </style>
+        
+    </head>    
 
 </head>
 
+
 <body>
 
-    <!-- Navigation -->
-    <div id="navbar"></div>
-
-    <!-- Hero Image -->
-
-    <header class="hero">
-
-        <!-- Replace hero.jpg later -->
-
-        <div class="hero-text">
+    <header>
 
             <h1>Casa Arroyo</h1>
+            <div>
+                <p class="par1">          
+                        Experience the charm of San Miguel de Allende from Casa Arroyo, a beautiful home within walking distance of the historic center.
+                </p>
+            </div>
 
-            <p>Your Home in San Miguel de Allende</p>
-
-        </div>
 
     </header>
-
-    <!-- Welcome -->
-
-    <section class="welcome">
-
-        <h2>Welcome</h2>
-
-        <p>
-
-            Experience the charm of San Miguel de Allende from Casa Arroyo, a beautiful home within walking distance of the historic center.
-
-        </p>
-
-    </section>
 
     <!-- Slideshow -->
 
@@ -55,53 +67,137 @@
 
         <h2>Take a Tour</h2>
 
-        <div class="slideshow">
+            <div class="slideshow-container">
 
-            <!-- Automatic slideshow goes here -->
+                <div class="mySlides">
+                    <div class="slideshow"></div>
+                    <img src="images/home/outisde.png">
+                </div>
+
+                <div class="mySlides">
+                    <div class="slideshow"></div>
+                    <img src="images/home/patio.jpeg">
+                </div>
+
+                <div class="mySlides">
+                    <div class="slideshow"></div>
+                    <img src="images/home/outsidetable.jpeg">
+                </div>
+
+                <div class="mySlides">
+                    <div class="slideshow"></div>
+                    <img src="images/home/chairs.jpeg">
+                </div>
+
+                <div class="mySlides">
+                    <div class="slideshow"></div>
+                    <img src="images/home/kitchen.jpeg">
+                </div>
+
+                <div class="mySlides">
+                    <div class="slideshow"></div>
+                    <img src="images/home/living.JPEG">
+                </div>
+                 <div class="mySlides">
+                    <div class="slideshow"></div>
+                    <img src="images/home/bed3.jpeg">
+                </div>
+                 <div class="mySlides">
+                    <div class="slideshow"></div>
+                    <img src="images/home/tvroom.jpeg">
+                </div>
+                 <div class="mySlides">
+                    <div class="slideshow"></div>
+                    <img src="images/home/bed2.JPEG">
+                </div>
+                 <div class="mySlides">
+                    <div class="slideshow"></div>
+                    <img src="images/home/banos.JPEG">
+                </div>
+                 <div class="mySlides">
+                    <div class="slideshow"></div>
+                    <img src="images/home/bed4.png">
+                </div>
+                 <div class="mySlides">
+                    <div class="slideshow"></div>
+                    <img src="images/home/bathroom.png">
+                </div>
+                 <div class="mySlides">
+                    <div class="slideshow"></div>
+                    <img src="images/home/primarybed.png">
+                </div>
+                 <div class="mySlides">
+                    <div class="slideshow"></div>
+                    <img src="images/home/primarybed.png">
+                </div>
+                 <div class="mySlides">
+                    <div class="slideshow"></div>
+                    <img src="images/home/lounge.png">
+                </div>
+                 <div class="mySlides">
+                    <div class="slideshow"></div>
+                    <img src="images/home/chips.jpeg">
+                </div>
+                 <div class="mySlides">
+                    <div class="slideshow"></div>
+                    <img src="images/home/balcony.png">
+                </div>
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                <!-- Image text -->
+                <div class="caption-container">
+                    <p id="caption"></p>
+                </div>
+
+        </div>
+        <!-- Reserve Button -->
+
+    <section class="booking">
+
+        <button href="https://www.booking.com/Share-T4QjJYG"
+
+           class="book_button">
+
+           Book Now
+
+    </button>
+
+    </section>
+
+    </section>
+
+    
+
+    <!-- Map -->
+
+    <section style = "background: #bcbbb3">
+
+        <h2 style = "align-items: center">Location</h2>
+
+        <div class = "map-container"> 
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29816.042246748297!2d-100.76066887870813!3d20.912107204463886!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842b51bba62b3e27%3A0x67451add2dba9c8!2sZona%20Centro%2C%20San%20Miguel%20de%20Allende%2C%20Guanajuato%2C%20Mexico!5e0!3m2!1sen!2sus!4v1785453782120!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" justify-content = "center" referrerpolicy="strict-origin-when-cross-origin"></iframe>
 
         </div>
 
     </section>
 
-    <!-- Reserve Button -->
-
-    <section class="booking">
-
-        <a href="https://booking.com"
-
-           class="reserve-button"
-
-           target="_blank">
-
-           Reserve Now
-
-        </a>
-
-    </section>
-
-    <!-- Map -->
-
-    <section class="location">
-
-        <h2>Location</h2>
-
-        <!-- Google Maps Embed Goes Here -->
-
-    </section>
-
+    
     <!-- Reviews -->
 
     <section class="reviews">
 
-        <h2>Guest Reviews</h2>
-
-        <!-- Booking.com widget goes here -->
+       <!-- Elfsight Booking.com Reviews | Untitled Booking.com Reviews -->
+            <script src="https://elfsightcdn.com/platform.js" async></script>
+            <div class="elfsight-app-7023e148-51da-4abd-8978-54abc88bb08d" data-elfsight-app-lazy></div>
 
     </section>
 
     <!-- Footer -->
 
-    <footer>
+    <footer class = "footer">
 
         <p>
 
@@ -112,6 +208,38 @@
     </footer>
 
     <script src="script.js"></script>
+
+    <script>
+
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n){
+    showSlides(slideIndex += n);
+}
+
+function showSlides(n){
+
+    let i;
+
+    let slides = document.getElementsByClassName("mySlides");
+
+    if(n > slides.length){
+        slideIndex = 1;
+    }
+
+    if(n < 1){
+        slideIndex = slides.length;
+    }
+
+    for(i = 0; i < slides.length; i++){
+        slides[i].style.display = "none";
+    }
+
+    slides[slideIndex-1].style.display = "block";
+}
+
+</script>
 
 </body>
 
